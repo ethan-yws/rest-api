@@ -1,0 +1,30 @@
+
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products/607a268000f1890a0b94d22c
+
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "title": "Nintendo",
+    "model": "Switch",
+    "price": "$399.00"
+}
+
+###
+DELETE http://localhost:3000/products/607a268000f1890a0b94d22c
+
+###
+PATCH http://localhost:3000/products/607a266a00f1890a0b94d22b
+Content-Type: application/json
+
+{
+    "title": "New Name",
+    "model": "sda",
+    "price": "USD199"
+}
